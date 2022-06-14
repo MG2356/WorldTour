@@ -1,0 +1,83 @@
+.heading{
+    text-align: center;
+    padding:2.5rem;
+}
+
+.heading span{
+    font-size: 3rem;
+    background: #fff3e0;
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+}
+
+.color{
+  background: #ff8543;
+}
+
+.countries .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.countries .box-container .box{
+    flex: 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    text-align: center;
+    background: #fff3e0;
+}
+
+.countries .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.countries .box-container .box .content{
+    padding:1px;
+}
+
+.countries .box-container .box .content h3{
+    font-size: 2rem;
+    color: black;
+}
+
+/* media querries */
+
+@media (max-width:1000px){             
+  html{
+    font-size: 70%;
+  }
+  .countries .box-container .box{
+    flex: 40rem;
+  }
+  .countries .box-container .box img{
+    height: 30rem;
+  }
+}
+
+@media (max-width:970px){
+  .countries{
+    font-size: 50%;
+  }
+  .continents .box-container .box{
+    flex: 30rem;
+  }
+  .continents .box-container .box img{
+    height: 30rem;
+  }
+} 
+
+@media (max-width:550px){
+  html{
+    font-size: 65%;
+  }
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 38%;
+  }
+}
